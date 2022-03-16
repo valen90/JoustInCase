@@ -2,10 +2,10 @@
     <div>
         <h2>JOUST IN CASE</h2>
         <save-dialog @closeDialog="createJouster" :showDialog="showCreateJousterDialog"></save-dialog>
-        <md-button class="md-primary md-raised" @click="showCreateJousterDialog = true">Create Jouster</md-button>
+        <md-button id="createJouster" class="md-primary md-raised" @click="showCreateJousterDialog = true">Create Jouster</md-button>
         <md-button class="md-primary md-raised" @click="registerPoints">Register points</md-button>
         
-        <md-table>
+        <md-table id="jousterTable">
             <md-table-row>
                 <md-table-head>ID</md-table-head>
                 <md-table-head>Name</md-table-head>
